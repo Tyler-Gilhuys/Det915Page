@@ -1,0 +1,22 @@
+.header {
+    background-color: blue;
+}
+
+.words {
+    color: white;
+}
+
+.sign-in {
+    background-color: white;
+    color: blue;
+}
+
+.sign-in:hover {
+    background-color: gold;
+    color: blue;
+}
+
+.sign-up {
+    background-color: gold;
+    color: blue;
+}
