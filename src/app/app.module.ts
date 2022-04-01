@@ -8,6 +8,7 @@ import { FooterComponent } from './navigation/footer.component';
 import { CalendarComponent } from './body/calendar.component';
 import { HomePageLayout } from './routes/home-page-layout.component';
 import { AnnounceComponent } from './body/announce.component';
+import { WKComponent } from './body/wk-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AnnounceComponent } from './body/announce.component';
     FooterComponent,
     CalendarComponent,
     HomePageLayout,
-    AnnounceComponent
+    AnnounceComponent,
+    WKComponent
   ],
   imports: [
     BrowserModule,
