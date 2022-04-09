@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "detachment915-63873"
+  },
+  "targets": {
+    "detachment915-63873": {
+      "hosting": {
+        "Det-915-Page": [
+          "detachment915-63873"
+        ]
+      }
+    }
+  }
+}

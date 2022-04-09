@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "Det-915-Page:build:production",
+            "firebaseProject": "detachment915-63873",
+            "firebaseHostingSite": "detachment915-63873"
+          }
         }
       }
     }

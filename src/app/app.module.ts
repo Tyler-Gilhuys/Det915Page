@@ -9,6 +9,15 @@ import { CalendarComponent } from './body/calendar.component';
 import { HomePageLayout } from './routes/home-page-layout.component';
 import { AnnounceComponent } from './body/announce.component';
 import { WKComponent } from './body/wk-card.component';
+import { UserInfoComponent } from './user-info/user-info.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ContinuityLayout } from './routes/continuity-layout.component';
+import { PictureLayout } from './routes/picture-layout.component';
+import { OperationsLayout } from './routes/operations-layout.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+
 
 @NgModule({
   declarations: [
@@ -18,11 +27,18 @@ import { WKComponent } from './body/wk-card.component';
     CalendarComponent,
     HomePageLayout,
     AnnounceComponent,
-    WKComponent
+    WKComponent,
+    UserInfoComponent,
+    ContinuityLayout,
+    PictureLayout,
+    OperationsLayout
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase())
   ],
   providers: [],
   bootstrap: [AppComponent]
