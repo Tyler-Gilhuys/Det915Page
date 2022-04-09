@@ -14,9 +14,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContinuityLayout } from './routes/continuity-layout.component';
 import { PictureLayout } from './routes/picture-layout.component';
 import { OperationsLayout } from './routes/operations-layout.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideDatabase, getDatabase } from '@angular/fire/database';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 
 @NgModule({
@@ -38,7 +39,7 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
     AppRoutingModule,
     HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideDatabase(() => getDatabase())
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
